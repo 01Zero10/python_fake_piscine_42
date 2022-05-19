@@ -1,0 +1,3 @@
+import Intern
+
+print("ciao")
