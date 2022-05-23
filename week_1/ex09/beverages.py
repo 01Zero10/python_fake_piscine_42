@@ -1,8 +1,3 @@
-from importlib.util import set_loader
-from mimetypes import init
-from re import T
-
-
 class HotBeverage():
 	def __init__(self, p = 0.30, n = "hot beverage"):
 		self.price = p
@@ -23,7 +18,8 @@ class Coffe(HotBeverage):
 class Tea(HotBeverage):
 	def __init__(self):
 		super().__init__(n="tea")
-
+	def description(self):
+		return super().description("Just some hot water in a cup.")
 
 class Chocolate(HotBeverage):
 	def __init__(self):
@@ -51,9 +47,6 @@ def main():
 	print(c)
 	print(d)
 	print(e)
-
-def func(a, b, c ,d=True):
-	print (a, b, c, d)
 
 if __name__ == "__main__":
 	main()
