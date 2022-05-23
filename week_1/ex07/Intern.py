@@ -7,7 +7,7 @@ class Intern():
 		def __str__(self) -> str:
 			return "This is the worst coffee you evertasted."
 	def work(self):
-		raise Exception("I’m just an intern, I can’t do that...")
+		raise Exception("I'm just an intern, I can't do that...")
 	def make_coffee(self):
 		return self.Coffe()
 
