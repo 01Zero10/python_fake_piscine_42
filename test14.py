@@ -1,3 +1,0 @@
-import Intern
-
-print("ciao")
